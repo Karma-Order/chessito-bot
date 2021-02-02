@@ -1,4 +1,4 @@
-![Logo](public/images/chessito-logo-medium.png)
+![Logo](public/images/chessito-header.png)
 
 
 Telegram bot connected to lichess API for notifications and much more
