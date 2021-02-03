@@ -1,0 +1,14 @@
+{
+    "env": {
+        "node": true,
+        "es2021": true
+    },
+    "extends": ["airbnb-base", "prettier", "plugin:import/errors"],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "plugins": ["import"],
+    "rules": {
+        "import/extensions": ["error", "ignorePackages"]
+    }
+}

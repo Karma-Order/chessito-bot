@@ -1,34 +1,44 @@
 {
-  "name": "chessito-bot",
-  "version": "1.0.0",
-  "description": "A Telegram Bot to consume lichess API",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ana-ac/chessito-bot.git"
-  },
-  "keywords": [
-    "nodejs",
-    "telegraf",
-    "npm"
-  ],
-  "authors": "Ana Arriaga Coll",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ana-ac/chessito-bot/issues"
-  },
-  "homepage": "https://github.com/ana-ac/chessito-bot#readme",
-  "dependencies": {
-    "dotenv-safe": "^8.2.0",
-    "telegraf": "^4.0.2"
-  },
-  "devDependencies": {
-    "eslint": "^7.19.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "nodemon": "^2.0.7"
-  }
+    "name": "chessito-bot",
+    "version": "1.0.0",
+    "description": "A Telegram Bot to consume lichess API",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon index.js",
+        "serve": "node index.js",
+        "format": "prettier --write .",
+        "lint": "eslint ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ana-ac/chessito-bot.git"
+    },
+    "type": "module",
+    "engines": {
+        "node": ">=14.15.0"
+    },
+    "keywords": [
+        "nodejs",
+        "telegraf",
+        "npm"
+    ],
+    "author": "Ana Arriaga Coll",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ana-ac/chessito-bot/issues"
+    },
+    "homepage": "https://github.com/ana-ac/chessito-bot#readme",
+    "dependencies": {
+        "dotenv-safe": "^8.2.0",
+        "passport-lichess": "^1.1.0",
+        "telegraf": "^4.0.2"
+    },
+    "devDependencies": {
+        "eslint": "^7.19.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-config-prettier": "^7.2.0",
+        "eslint-plugin-import": "^2.22.1",
+        "nodemon": "^2.0.7",
+        "prettier": "2.2.1"
+    }
 }

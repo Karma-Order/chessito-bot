@@ -1,5 +1,7 @@
-require('dotenv-safe').config();
+import { config } from "dotenv-safe";
 
-module.exports = {
-    token: process.env.TOKEN,
+config();
+export default {
+    telegramBotToken: process.env.TELEGRAM_BOT_TOKEN,
+    lichessApiToken: process.env.LICHESS_API_TOKEN,
 };
