@@ -20,10 +20,11 @@
     "keywords": [
         "nodejs",
         "telegraf",
-        "npm"
+        "npm",
+        "lichess"
     ],
     "author": "Ana Arriaga Coll",
-    "license": "ISC",
+    "license": "GPL",
     "bugs": {
         "url": "https://github.com/ana-ac/chessito-bot/issues"
     },
