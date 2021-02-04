@@ -1,5 +1,12 @@
+import { login } from "./lichess-api.js";
+
 export default class Lichess {
-    constructor(token) {
-        console.log(token);
+
+    constructor(credentials) {
+        this.credentials = credentials;
+    }
+
+    login() {
+        return login(this.credentials);
     }
 }

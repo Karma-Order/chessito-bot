@@ -31,6 +31,7 @@
     "homepage": "https://github.com/ana-ac/chessito-bot#readme",
     "dependencies": {
         "dotenv-safe": "^8.2.0",
+        "passport": "^0.4.1",
         "passport-lichess": "^1.1.0",
         "telegraf": "^4.0.2"
     },
