@@ -1,4 +1,5 @@
 import { Telegraf } from "telegraf";
+import Commands from "./commands.js"
 
 export default class Bot {
     constructor(token, lichess) {
@@ -12,7 +13,9 @@ export default class Bot {
     }
 
     bindEvents() {
-        console.log(this.lichess);
-        this.bot.start((ctx) => ctx.reply("Hola Mario!!"));
+        const commands = new Commands(this.lichess);
+        Object.entries(commands.commands).forEach(([commandName, handler]) => {
+            this.bot.command(commandName, handler);
+        });
     }
 }

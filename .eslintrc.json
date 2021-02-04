@@ -9,6 +9,7 @@
     },
     "plugins": ["import"],
     "rules": {
-        "import/extensions": ["error", "ignorePackages"]
+        "import/extensions": ["error", "ignorePackages"],
+        "class-methods-use-this": 0
     }
 }
