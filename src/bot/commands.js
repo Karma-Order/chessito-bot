@@ -5,7 +5,7 @@ export default class Commands {
             start(ctx) {
                 ctx.reply('start');
             },
-        
+            
             help(ctx) {
                 ctx.reply('help');
             },
@@ -17,6 +17,7 @@ export default class Commands {
         
             livegames(ctx) {
                 ctx.reply('handlelivegames');
+                lichess.getLiveGames();
             },
         }
     }
