@@ -16,8 +16,12 @@ export default class Bot {
 
     bindEvents() {
         const commands = new Commands(this.lichess);
-        Object.entries(commands.commands).forEach(([commandName, handler]) => {
+        Object.entries(commands.list).forEach(([commandName, handler]) => {
             this.bot.command(commandName, handler);
         });
+        this.bot.on('text', (ctx) => {
+            ctx.replyWithMarkdown('[Lichess](https://lichess.org)');
+            ctx.replyWithHTML('<a href="https://lichess.org">Lichess</a>');
+        })
     }
 }
