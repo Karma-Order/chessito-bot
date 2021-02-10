@@ -1,10 +1,12 @@
 import { Telegraf } from "telegraf";
 import Commands from "./commands.js"
+import LichessService from "../services/lichess.js";
+
 
 export default class Bot {
-    constructor(token, lichess) {
-        this.bot = new Telegraf(token);
-        this.lichess = lichess;
+    constructor(conf) {
+        this.bot = new Telegraf(conf.telegramBotToken);
+        this.lichess =  new LichessService(conf.lichess);
         this.bindEvents();
     }
 
