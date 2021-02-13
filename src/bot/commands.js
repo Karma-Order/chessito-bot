@@ -1,11 +1,15 @@
 export default class Commands {
 
     constructor(lichess) {
-        this.commands = {
+        this.list = this.getCommands(lichess);
+    }
+
+    getCommands(lichess) {
+        return {
             start(ctx) {
                 ctx.reply('start');
             },
-        
+
             help(ctx) {
                 ctx.reply('help');
             },
@@ -17,6 +21,7 @@ export default class Commands {
         
             livegames(ctx) {
                 ctx.reply('handlelivegames');
+                lichess.getLiveGames();
             },
         }
     }

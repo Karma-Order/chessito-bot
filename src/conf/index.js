@@ -8,4 +8,9 @@ export default {
         clientID: process.env.LICHESS_CLIENT_ID,
         clientSecret: process.env.LICHESS_CLIENT_SECRET,
     },
+    mongodb: {
+        dbName: process.env.MONGODB_DATABASE_NAME,
+        dbUserName: process.env.MONGODB_DATABASE_USERNAME,
+        dbPassword: process.env.MONGODB_DATABASE_PASSWORD,
+    }
 };
