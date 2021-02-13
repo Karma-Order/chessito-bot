@@ -32,6 +32,7 @@
     "dependencies": {
         "dotenv-safe": "^8.2.0",
         "express": "^4.17.1",
+        "mongodb": "^3.6.4",
         "passport": "^0.4.1",
         "passport-lichess": "^1.1.0",
         "telegraf": "^4.0.2"
