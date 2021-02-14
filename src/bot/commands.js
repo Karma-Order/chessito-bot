@@ -15,8 +15,8 @@ export default class Commands {
             },
         
             login(ctx) {
-                ctx.reply('login');
-                lichess.login();
+                const url = lichess.login(ctx.message.chat.id);
+                ctx.replyWithMarkdown(`[Login with Lichess](${url})`);
             },
         
             livegames(ctx) {

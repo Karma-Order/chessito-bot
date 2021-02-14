@@ -1,4 +1,4 @@
-import { login, getLiveGames } from "../models/lichess.js";
+import { login, getLiveGames } from "../../models/lichess.js";
 
 export default class LichessService {
 
@@ -6,8 +6,9 @@ export default class LichessService {
         this.credentials = credentials;
     }
 
-    login() {
-        return login(this.credentials);
+    login(chatId) {
+        login(chatId);
+        return `https://chessito.org/auth/lichess?chat_id=${chatId}`;
     }
 
     getLiveGames() {

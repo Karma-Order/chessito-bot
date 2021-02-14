@@ -12,5 +12,8 @@ export default {
         dbName: process.env.MONGODB_DATABASE_NAME,
         dbUserName: process.env.MONGODB_DATABASE_USERNAME,
         dbPassword: process.env.MONGODB_DATABASE_PASSWORD,
+    },
+    server: {
+        port: process.env.SERVER_PORT,
     }
 };
