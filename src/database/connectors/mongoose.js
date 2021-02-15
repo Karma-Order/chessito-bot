@@ -18,7 +18,7 @@ export default class MongooseConnector {
             });
             console.log("Connected correctly to server");
         } catch (err) {
-            console.log(err.stack);
+            console.error(err.stack);
         }
     }
 

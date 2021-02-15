@@ -4,14 +4,23 @@ import MongooseConnector from "./mongoose.js";
 export default class DBConnector {
 
     constructor() {
-        this.connector = conf.database.connector;
+        this.connectorType = conf.database.connector;
+        this.connector = null;
     }
 
     getConnector() {
-        if (this.connector === "Mongoose") {
-            return new MongooseConnector();
+        if (this.connector !== null) {
+            return this.connector;
         }
-        return new MongooseConnector();
+
+        if (this.connectorType === "Mongoose") {
+            this.connector = new MongooseConnector();
+        } else {
+            // default connector
+            this.connector = new MongooseConnector();
+        }
+
+        return this.connector;
     }
 
 }
