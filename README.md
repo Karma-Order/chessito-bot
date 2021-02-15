@@ -1,4 +1,4 @@
-![Logo](public/images/chessito-header.png)
+# ![Chessito Logo](public/images/chessito-header.png)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
