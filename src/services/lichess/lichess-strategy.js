@@ -3,8 +3,8 @@ import conf from "../../conf/index.js";
 
 export default new Strategy(
     {
-        clientID: 'AIrxNTnLSMQmJmoF',
-        clientSecret: '2kWJxQFNczrfOKDCGTJ7kBtSeZxawQ1C',
+        clientID: conf.lichess.clientID,
+        clientSecret: conf.lichess.clientSecret,
         callbackURL: `http://localhost:${conf.server.port}/auth/lichess/callback`,
     },
     (_accessToken, refreshToken, profile, cb) => {
