@@ -1,8 +1,17 @@
+import DBConnector from "../database/connectors/index.js";
 
-export function login(chatId) {
-    console.log(chatId);
-}
+export default class LichessModel {
 
-export function getLiveGames() {
-    console.log("getLiveGames");
+    constructor() {
+        this.connector = new DBConnector().getConnector();
+        this.connector.connect();
+    }
+
+    login(chatId) {
+        console.log(chatId);
+    }
+
+    getLiveGames() {
+        console.log("getLiveGames");
+    }
 }

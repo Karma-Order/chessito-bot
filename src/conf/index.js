@@ -14,6 +14,9 @@ export default {
         dbPassword: process.env.MONGODB_DATABASE_PASSWORD,
     },
     server: {
-        port: process.env.SERVER_PORT,
+        port: 3000,
+    },
+    database: {
+        connector: "Mongoose"
     }
 };
