@@ -1,9 +1,7 @@
-import DBConnector from "../database/connectors/index.js";
-
 export default class LichessModel {
 
-    constructor() {
-        this.connector = new DBConnector().getConnector();
+    constructor(dbConnector) {
+        this.connector = dbConnector.getConnector();
         this.connector.connect();
     }
 
@@ -13,5 +11,6 @@ export default class LichessModel {
 
     getLiveGames() {
         console.log("getLiveGames");
+        return "getLiveGames";
     }
 }
