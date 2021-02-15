@@ -13,14 +13,16 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            # Checks out a copy of your repository on the ubuntu-latest machine
-            - name: Checkout code
-              uses: actions/checkout@v2
-            
-            - name: Setup Node 
+            - name: Setup node 
               uses: actions/setup-node@v2
               with:
                   node-version: '14'
+
+            - name: Checkout code
+              uses: actions/checkout@v2
+                  
+            - name: Npm actions
+              run: npm install
 
             # Runs the Super-Linter action
             - name: Run Super-Linter
