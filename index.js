@@ -1,7 +1,9 @@
 import conf from "./src/conf/index.js";
-import Bot from "./src/bot.js";
-import Lichess from "./src/lichess/lichess.js";
+import Bot from "./src/bot/bot.js";
+import Router from "./src/routes.js";
 
-const lichess = new Lichess(conf.lichessApiToken);
-const bot = new Bot(conf.telegramBotToken, lichess);
+const router = new Router();
+router.registerRoutes();
+
+const bot = new Bot(conf);
 bot.launch();

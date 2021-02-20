@@ -20,16 +20,21 @@
     "keywords": [
         "nodejs",
         "telegraf",
-        "npm"
+        "npm",
+        "lichess"
     ],
     "author": "Ana Arriaga Coll",
-    "license": "ISC",
+    "license": "GPL",
     "bugs": {
         "url": "https://github.com/ana-ac/chessito-bot/issues"
     },
     "homepage": "https://github.com/ana-ac/chessito-bot#readme",
     "dependencies": {
         "dotenv-safe": "^8.2.0",
+        "express": "^4.17.1",
+        "mongodb": "^3.6.4",
+        "mongoose": "^5.11.16",
+        "passport": "^0.4.1",
         "passport-lichess": "^1.1.0",
         "telegraf": "^4.0.2"
     },
@@ -38,6 +43,7 @@
         "eslint-config-airbnb-base": "^14.2.1",
         "eslint-config-prettier": "^7.2.0",
         "eslint-plugin-import": "^2.22.1",
+        "markdownlint": "^0.23.1",
         "nodemon": "^2.0.7",
         "prettier": "2.2.1"
     }
