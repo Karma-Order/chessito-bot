@@ -25,4 +25,8 @@ export default class DBConnector {
     disconnect() {
         mongoose.connection.close();
     }
+
+    buildModel(type, schema) {
+        return mongoose.model(type, mongoose.Schema(schema));
+    }
 }
