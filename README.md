@@ -14,8 +14,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/mmarinero"><img src="https://avatars.githubusercontent.com/u/475969?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mario Marinero</b></sub></a><br /><a href="https://github.com/ana-ac/chessito-bot/commits?author=mmarinero" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/ana-ac"><img src="https://avatars.githubusercontent.com/u/18517037?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ana Arriaga Coll</b></sub></a><br /><a href="https://github.com/ana-ac/chessito-bot/commits?author=ana-ac" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/mmarinero"><img src="https://avatars.githubusercontent.com/u/475969?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mario Marinero</b></sub></a><br /><a href="https://github.com/Karma-Order/chessito-bot/commits?author=mmarinero" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/ana-ac"><img src="https://avatars.githubusercontent.com/u/18517037?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ana Arriaga Coll</b></sub></a><br /><a href="https://github.com/Karma-Order/chessito-bot/commits?author=ana-ac" title="Code">💻</a> <a href="#infra-ana-ac" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/Karma-Order/chessito-bot/pulls?q=is%3Apr+reviewed-by%3Aana-ac" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
