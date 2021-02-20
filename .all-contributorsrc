@@ -11,13 +11,14 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/475969?v=4",
       "profile": "https://github.com/mmarinero",
       "contributions": [
-        "code"
+        "code",
+        "infra"
       ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "chessito-bot",
-  "projectOwner": "ana-ac",
+  "projectOwner": "Karma-Order",
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true
