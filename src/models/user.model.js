@@ -1,9 +1,9 @@
-import DBConnector from "../database/connectors/index.js";
+import DBConnector from "./db-connector.js";
 
-export default class LichessModel {
+export default class UserModel {
 
     constructor() {
-        this.connector = new DBConnector().getConnector();
+        this.connector = new DBConnector();
         this.connector.connect();
     }
 

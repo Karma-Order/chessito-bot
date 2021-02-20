@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
-import conf from "../../conf/index.js";
+import conf from "../conf/index.js";
 
-export default class MongooseConnector {
+export default class DBConnector {
 
     constructor() {
         const { dbUserName, dbPassword, dbName } = conf.mongodb;
@@ -22,7 +22,7 @@ export default class MongooseConnector {
         }
     }
 
-    close() {
+    disconnect() {
         mongoose.connection.close();
     }
 }

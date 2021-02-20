@@ -1,7 +1,7 @@
 import express from "express";
 import passport from "passport";
-import conf from "./conf/index.js";
-import LichessRouter from "./services/lichess/router-lichess.js";
+import conf from "../conf/index.js";
+import LichessRouter from "./router-lichess.js";
 
 export default class Router {
 

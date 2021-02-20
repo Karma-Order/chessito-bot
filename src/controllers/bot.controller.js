@@ -1,6 +1,6 @@
 import { Telegraf } from "telegraf";
-import Commands from "./commands.js"
-import LichessService from "../services/lichess/lichess.js";
+import Commands from "./commands.controller.js"
+import LichessService from "../services/lichess.service.js";
 
 
 export default class Bot {

@@ -1,4 +1,4 @@
-import lichessStrategy from "./lichess-strategy.js";
+import lichessStrategy from "./strategies/lichess-strategy.js";
 
 export default class LichessRouter {
     constructor(app, passport) {
