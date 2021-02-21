@@ -34,3 +34,6 @@ jobs:
                   MARKDOWN_CONFIG_FILE: .markdownlint.json
                   JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
                   VALIDATE_JAVASCRIPT_STANDARD: false
+            
+            - name: Run Tests
+              run: npm test
