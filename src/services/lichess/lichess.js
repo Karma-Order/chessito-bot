@@ -9,7 +9,7 @@ export default class LichessService {
 
     login(chatId) {
         this.lichessModel.login(chatId);
-        return `https://chessito.org/auth/lichess?chat_id=${chatId}`;
+        return `https://${this.credentials.authDomain}:${this.credentials.authPort}/auth/lichess?chat_id=${chatId}`;
     }
 
     getLiveGames() {

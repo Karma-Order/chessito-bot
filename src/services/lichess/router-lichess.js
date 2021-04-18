@@ -5,6 +5,16 @@ export default class LichessRouter {
         this.app = app;
         this.passport = passport;
         this.passport.use(lichessStrategy);
+        app.use(passport.initialize());
+        app.use(passport.session());
+        passport.serializeUser((user, done) => {
+            console.log('serialize');
+            done(null, user);
+        });
+          
+        passport.deserializeUser((user, done) => {
+            done(null, user);
+        });
     }
 
     registerRoutes() {
@@ -18,7 +28,7 @@ export default class LichessRouter {
             this.passport.authenticate('lichess', {
                 failureRedirect: "/login",
             }),
-            (req, res) => {
+            (err, res) => {
                 res.redirect("/");
             }
         );

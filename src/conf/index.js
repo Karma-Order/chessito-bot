@@ -1,20 +1,22 @@
 import { config } from "dotenv-safe";
 
 config();
-
+const { env } = process;
 export default {
-    telegramBotToken: process.env.TELEGRAM_BOT_TOKEN,
+    telegramBotToken: env.TELEGRAM_BOT_TOKEN,
     lichess: {
-        clientID: process.env.LICHESS_CLIENT_ID,
-        clientSecret: process.env.LICHESS_CLIENT_SECRET,
+        clientID: env.LICHESS_CLIENT_ID,
+        clientSecret: env.LICHESS_CLIENT_SECRET,
+        authDomain: env.CHESSITO_DOMAIN,
+        authPort: env.CHESSITO_PORT
     },
     mongodb: {
-        dbName: process.env.MONGODB_DATABASE_NAME,
-        dbUserName: process.env.MONGODB_DATABASE_USERNAME,
-        dbPassword: process.env.MONGODB_DATABASE_PASSWORD,
+        dbName: env.MONGODB_DATABASE_NAME,
+        dbUserName: env.MONGODB_DATABASE_USERNAME,
+        dbPassword: env.MONGODB_DATABASE_PASSWORD,
     },
     server: {
-        port: 3000,
+        port: env.CHESSITO_PORT
     },
     database: {
         connector: "Mongoose"

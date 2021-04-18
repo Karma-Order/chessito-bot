@@ -5,10 +5,10 @@ export default new Strategy(
     {
         clientID: conf.lichess.clientID,
         clientSecret: conf.lichess.clientSecret,
-        callbackURL: `http://localhost:${conf.server.port}/auth/lichess/callback`,
+        callbackURL: `http://${conf.lichess.authDomain}:${conf.lichess.authPort}/auth/lichess/callback`,
     },
     (_accessToken, refreshToken, profile, cb) => {
         console.log(profile);
-        console.log(cb);
+        return cb(null, profile);
     }
 );
